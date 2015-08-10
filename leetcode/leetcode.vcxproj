@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{649C1043-757D-45C7-A0FF-78308DFAEE01}</ProjectGuid>
+    <RootNamespace>leetcode</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Q100_Same_Tree.cpp" />
+    <ClCompile Include="Q101_Symmetric_Tree.cpp" />
+    <ClCompile Include="Q102_Binary_Tree_Level_Order_Traversal.cpp" />
+    <ClCompile Include="Q103_Binary_Tree_Zigzag_Level_Order_Traversal.cpp" />
+    <ClCompile Include="Q104_Maximum_Depth_of_Binary_Tree.cpp" />
+    <ClCompile Include="Q105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.cpp" />
+    <ClCompile Include="Q106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.cpp" />
+    <ClCompile Include="Q107_Binary_Tree_Level_Order_Traversal_II.cpp" />
+    <ClCompile Include="Q108_Convert_Sorted_Array_to_Binary_Search_Tree.cpp" />
+    <ClCompile Include="Q109_Convert_Sorted_List_to_Binary_Search_Tree.cpp" />
+    <ClCompile Include="Q10_Regular_Expression_Matching.cpp" />
+    <ClCompile Include="Q110_Balanced_Binary_Tree.cpp" />
+    <ClCompile Include="Q111_Minimum_Depth_of_Binary_Tree.cpp" />
+    <ClCompile Include="Q112_Path_Sum.cpp" />
+    <ClCompile Include="Q113_Path_Sum_II.cpp" />
+    <ClCompile Include="Q114_Flatten_Binary_Tree_to_Linked_List.cpp" />
+    <ClCompile Include="Q115_Distinct_Subsequences.cpp" />
+    <ClCompile Include="Q116_Populating_Next_Right_Pointers_in_Each_Node.cpp" />
+    <ClCompile Include="Q117_Populating_Next_Right_Pointers_in_Each_Node_II.cpp" />
+    <ClCompile Include="Q118_Pascal%27s_Triangle.cpp" />
+    <ClCompile Include="Q119_Pascal%27s_Triangle_II.cpp" />
+    <ClCompile Include="Q11_Container_With_Most_Water.cpp" />
+    <ClCompile Include="Q120_Triangle.cpp" />
+    <ClCompile Include="Q121_Best_Time_to_Buy_and_Sell_Stock.cpp" />
+    <ClCompile Include="Q122_Best_Time_to_Buy_and_Sell_Stock_II.cpp" />
+    <ClCompile Include="Q123_Best_Time_to_Buy_and_Sell_Stock_III.cpp" />
+    <ClCompile Include="Q124_Binary_Tree_Maximum_Path_Sum.cpp" />
+    <ClCompile Include="Q125_Valid_Palindrome.cpp" />
+    <ClCompile Include="Q126_Word_Ladder_II.cpp" />
+    <ClCompile Include="Q127_Word_Ladder.cpp" />
+    <ClCompile Include="Q128_Longest_Consecutive_Sequence.cpp" />
+    <ClCompile Include="Q129_Sum_Root_to_Leaf_Numbers.cpp" />
+    <ClCompile Include="Q12_Integer_to_Roman.cpp" />
+    <ClCompile Include="Q130_Surrounded_Regions.cpp" />
+    <ClCompile Include="Q131_Palindrome_Partitioning.cpp" />
+    <ClCompile Include="Q132_Palindrome_Partitioning_II.cpp" />
+    <ClCompile Include="Q133_Clone_Graph.cpp" />
+    <ClCompile Include="Q134_Gas_Station.cpp" />
+    <ClCompile Include="Q135_Candy.cpp" />
+    <ClCompile Include="Q136_Single_Number.cpp" />
+    <ClCompile Include="Q137_Single_Number_II.cpp" />
+    <ClCompile Include="Q138_Copy_List_with_Random_Pointer.cpp" />
+    <ClCompile Include="Q139_Word_Break.cpp" />
+    <ClCompile Include="Q13_Roman_to_Integer.cpp" />
+    <ClCompile Include="Q140_Word_Break_II.cpp" />
+    <ClCompile Include="Q141_Linked_List_Cycle.cpp" />
+    <ClCompile Include="Q142_Linked_List_Cycle_II.cpp" />
+    <ClCompile Include="Q143_Reorder_List.cpp" />
+    <ClCompile Include="Q144_Binary_Tree_Preorder_Traversal.cpp" />
+    <ClCompile Include="Q145_Binary_Tree_Postorder_Traversal.cpp" />
+    <ClCompile Include="Q146_LRU_Cache.cpp" />
+    <ClCompile Include="Q147_Insertion_Sort_List.cpp" />
+    <ClCompile Include="Q148_Sort_List.cpp" />
+    <ClCompile Include="Q149_Max_Points_on_a_Line.cpp" />
+    <ClCompile Include="Q14_Longest_Common_Prefix.cpp" />
+    <ClCompile Include="Q150_Evaluate_Reverse_Polish_Notation.cpp" />
+    <ClCompile Include="Q151_Reverse_Words_in_a_String.cpp" />
+    <ClCompile Include="Q152_Maximum_Product_Subarray.cpp" />
+    <ClCompile Include="Q153_Find_Minimum_in_Rotated_Sorted_Array.cpp" />
+    <ClCompile Include="Q154_Find_Minimum_in_Rotated_Sorted_Array_II.cpp" />
+    <ClCompile Include="Q155_Min_Stack.cpp" />
+    <ClCompile Include="Q15_3Sum.cpp" />
+    <ClCompile Include="Q160_Intersection_of_Two_Linked_Lists.cpp" />
+    <ClCompile Include="Q162_Find_Peak_Element.cpp" />
+    <ClCompile Include="Q164_Maximum_Gap.cpp" />
+    <ClCompile Include="Q165_Compare_Version_Numbers.cpp" />
+    <ClCompile Include="Q166_Fraction_to_Recurring_Decimal.cpp" />
+    <ClCompile Include="Q168_Excel_Sheet_Column_Title.cpp" />
+    <ClCompile Include="Q169_Majority_Element.cpp" />
+    <ClCompile Include="Q16_3Sum_Closest.cpp" />
+    <ClCompile Include="Q171_Excel_Sheet_Column_Number.cpp" />
+    <ClCompile Include="Q172_Factorial_Trailing_Zeroes.cpp" />
+    <ClCompile Include="Q173_Binary_Search_Tree_Iterator.cpp" />
+    <ClCompile Include="Q174_Dungeon_Game.cpp" />
+    <ClCompile Include="Q179_Largest_Number.cpp" />
+    <ClCompile Include="Q17_Letter_Combinations_of_a_Phone_Number.cpp" />
+    <ClCompile Include="Q187_Repeated_DNA_Sequences.cpp" />
+    <ClCompile Include="Q188_Best_Time_to_Buy_and_Sell_Stock_IV.cpp" />
+    <ClCompile Include="Q189_Rotate_Array.cpp" />
+    <ClCompile Include="Q18_4Sum.cpp" />
+    <ClCompile Include="Q190_Reverse_Bits.cpp" />
+    <ClCompile Include="Q191_Number_of_1_Bits.cpp" />
+    <ClCompile Include="Q198_House_Robber.cpp" />
+    <ClCompile Include="Q199_Binary_Tree_Right_Side_View.cpp" />
+    <ClCompile Include="Q19_Remove_Nth_Node_From_End_of_List.cpp" />
+    <ClCompile Include="Q1_Two_Sum.cpp" />
+    <ClCompile Include="Q200_Number_of_Islands.cpp" />
+    <ClCompile Include="Q201_Bitwise_AND_of_Numbers_Range.cpp" />
+    <ClCompile Include="Q202_Happy_Number.cpp" />
+    <ClCompile Include="Q203_Remove_Linked_List_Elements.cpp" />
+    <ClCompile Include="Q204_Count_Primes.cpp" />
+    <ClCompile Include="Q205_Isomorphic_Strings.cpp" />
+    <ClCompile Include="Q206_Reverse_Linked_List.cpp" />
+    <ClCompile Include="Q207_Course_Schedule.cpp" />
+    <ClCompile Include="Q208_Implement_Trie_(Prefix Tree).cpp" />
+    <ClCompile Include="Q209_Minimum_Size_Subarray_Sum.cpp" />
+    <ClCompile Include="Q20_Valid_Parentheses.cpp" />
+    <ClCompile Include="Q210_Course_Schedule_II.cpp" />
+    <ClCompile Include="Q211_Add_and_Search_Word - Data_structure_design.cpp" />
+    <ClCompile Include="Q212_Word_Search_II.cpp" />
+    <ClCompile Include="Q213_House_Robber_II.cpp" />
+    <ClCompile Include="Q214_Shortest_Palindrome.cpp" />
+    <ClCompile Include="Q215_Kth_Largest_Element_in_an_Array.cpp" />
+    <ClCompile Include="Q216_Combination_Sum_III.cpp" />
+    <ClCompile Include="Q217_Contains_Duplicate.cpp" />
+    <ClCompile Include="Q218_The_Skyline_Problem.cpp" />
+    <ClCompile Include="Q219_Contains_Duplicate_II.cpp" />
+    <ClCompile Include="Q21_Merge_Two_Sorted_Lists.cpp" />
+    <ClCompile Include="Q220_Contains_Duplicate_III.cpp" />
+    <ClCompile Include="Q221_Maximal_Square.cpp" />
+    <ClCompile Include="Q222_Count_Complete_Tree_Nodes.cpp" />
+    <ClCompile Include="Q223_Rectangle_Area.cpp" />
+    <ClCompile Include="Q224_Basic_Calculator.cpp" />
+    <ClCompile Include="Q225_Implement_Stack_using_Queues.cpp" />
+    <ClCompile Include="Q226_Invert_Binary_Tree.cpp" />
+    <ClCompile Include="Q227_Basic_Calculator_II.cpp" />
+    <ClCompile Include="Q228_Summary_Ranges.cpp" />
+    <ClCompile Include="Q229_Majority_Element_II.cpp" />
+    <ClCompile Include="Q22_Generate_Parentheses.cpp" />
+    <ClCompile Include="Q230_Kth_Smallest_Element_in_a_BST.cpp" />
+    <ClCompile Include="Q231_Power_of_Two.cpp" />
+    <ClCompile Include="Q232_Implement_Queue_using_Stacks.cpp" />
+    <ClCompile Include="Q233_Number_of_Digit_One.cpp" />
+    <ClCompile Include="Q234_Palindrome_Linked_List.cpp" />
+    <ClCompile Include="Q235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.cpp" />
+    <ClCompile Include="Q236_Lowest_Common_Ancestor_of_a_Binary_Tree.cpp" />
+    <ClCompile Include="Q237_Delete_Node_in_a_Linked_List.cpp" />
+    <ClCompile Include="Q238_Product_of_Array_Except_Self.cpp" />
+    <ClCompile Include="Q239_Sliding_Window_Maximum.cpp" />
+    <ClCompile Include="Q23_Merge_k_Sorted_Lists.cpp" />
+    <ClCompile Include="Q240_Search_a_2D_Matrix_II.cpp" />
+    <ClCompile Include="Q241_Different_Ways_to_Add_Parentheses.cpp" />
+    <ClCompile Include="Q242_Valid_Anagram.cpp" />
+    <ClCompile Include="Q24_Swap_Nodes_in_Pairs.cpp" />
+    <ClCompile Include="Q25_Reverse_Nodes_in_k-Group.cpp" />
+    <ClCompile Include="Q26_Remove_Duplicates_from_Sorted_Array.cpp" />
+    <ClCompile Include="Q27_Remove_Element.cpp" />
+    <ClCompile Include="Q28_Implement_strStr().cpp" />
+    <ClCompile Include="Q29_Divide_Two_Integers.cpp" />
+    <ClCompile Include="Q2_Add_Two_Numbers.cpp" />
+    <ClCompile Include="Q30_Substring_with_Concatenation_of_All_Words.cpp" />
+    <ClCompile Include="Q31_Next_Permutation.cpp" />
+    <ClCompile Include="Q32_Longest_Valid_Parentheses.cpp" />
+    <ClCompile Include="Q33_Search_in_Rotated_Sorted_Array.cpp" />
+    <ClCompile Include="Q34_Search_for_a_Range.cpp" />
+    <ClCompile Include="Q35_Search_Insert_Position.cpp" />
+    <ClCompile Include="Q36_Valid_Sudoku.cpp" />
+    <ClCompile Include="Q37_Sudoku_Solver.cpp" />
+    <ClCompile Include="Q38_Count_and_Say.cpp" />
+    <ClCompile Include="Q39_Combination_Sum.cpp" />
+    <ClCompile Include="Q3_Longest_Substring_Without_Repeating_Characters .cpp" />
+    <ClCompile Include="Q40_Combination_Sum_II.cpp" />
+    <ClCompile Include="Q41_First_Missing_Positive.cpp" />
+    <ClCompile Include="Q42_Trapping_Rain_Water.cpp" />
+    <ClCompile Include="Q43_Multiply_Strings.cpp" />
+    <ClCompile Include="Q44_Wildcard_Matching.cpp" />
+    <ClCompile Include="Q45_Jump_Game_II.cpp" />
+    <ClCompile Include="Q46_Permutations.cpp" />
+    <ClCompile Include="Q47_Permutations_II.cpp" />
+    <ClCompile Include="Q48_Rotate_Image.cpp" />
+    <ClCompile Include="Q49_Anagrams.cpp" />
+    <ClCompile Include="Q4_Median_of_Two_Sorted_Arrays.cpp" />
+    <ClCompile Include="Q50_Pow(x, n).cpp" />
+    <ClCompile Include="Q51_N-Queens.cpp" />
+    <ClCompile Include="Q52_N-Queens_II.cpp" />
+    <ClCompile Include="Q53_Maximum_Subarray.cpp" />
+    <ClCompile Include="Q54_Spiral_Matrix.cpp" />
+    <ClCompile Include="Q55_Jump_Game.cpp" />
+    <ClCompile Include="Q56_Merge_Intervals.cpp" />
+    <ClCompile Include="Q57_Insert_Interval.cpp" />
+    <ClCompile Include="Q58_Length_of_Last_Word.cpp" />
+    <ClCompile Include="Q59_Spiral_Matrix_II.cpp" />
+    <ClCompile Include="Q5_Longest_Palindromic_Substring.cpp" />
+    <ClCompile Include="Q60_Permutation_Sequence.cpp" />
+    <ClCompile Include="Q61_Rotate_List.cpp" />
+    <ClCompile Include="Q62_Unique_Paths.cpp" />
+    <ClCompile Include="Q63_Unique_Paths_II.cpp" />
+    <ClCompile Include="Q64_Minimum_Path_Sum.cpp" />
+    <ClCompile Include="Q65_Valid_Number.cpp" />
+    <ClCompile Include="Q66_Plus_One.cpp" />
+    <ClCompile Include="Q67_Add_Binary.cpp" />
+    <ClCompile Include="Q68_Text_Justification.cpp" />
+    <ClCompile Include="Q69_Sqrt(x).cpp" />
+    <ClCompile Include="Q6_ZigZag_Conversion.cpp" />
+    <ClCompile Include="Q70_Climbing_Stairs.cpp" />
+    <ClCompile Include="Q71_Simplify_Path.cpp" />
+    <ClCompile Include="Q72_Edit_Distance.cpp" />
+    <ClCompile Include="Q73_Set_Matrix_Zeroes.cpp" />
+    <ClCompile Include="Q74_Search_a_2D_Matrix.cpp" />
+    <ClCompile Include="Q75_Sort_Colors.cpp" />
+    <ClCompile Include="Q76_Minimum_Window_Substring.cpp" />
+    <ClCompile Include="Q77_Combinations.cpp" />
+    <ClCompile Include="Q78_Subsets.cpp" />
+    <ClCompile Include="Q79_Word_Search.cpp" />
+    <ClCompile Include="Q7_Reverse_Integer.cpp" />
+    <ClCompile Include="Q80_Remove_Duplicates_from_Sorted_Array_II.cpp" />
+    <ClCompile Include="Q81_Search_in_Rotated_Sorted_Array_II.cpp" />
+    <ClCompile Include="Q82_Remove_Duplicates_from_Sorted_List_II.cpp" />
+    <ClCompile Include="Q83_Remove_Duplicates_from_Sorted_List.cpp" />
+    <ClCompile Include="Q84_Largest_Rectangle_in_Histogram.cpp" />
+    <ClCompile Include="Q85_Maximal_Rectangle.cpp" />
+    <ClCompile Include="Q86_Partition_List.cpp" />
+    <ClCompile Include="Q87_Scramble_String.cpp" />
+    <ClCompile Include="Q88_Merge_Sorted_Array.cpp" />
+    <ClCompile Include="Q89_Gray_Code.cpp" />
+    <ClCompile Include="Q8_String_to_Integer_(atoi).cpp" />
+    <ClCompile Include="Q90_Subsets_II.cpp" />
+    <ClCompile Include="Q91_Decode_Ways.cpp" />
+    <ClCompile Include="Q92_Reverse_Linked_List_II.cpp" />
+    <ClCompile Include="Q93_Restore_IP_Addresses.cpp" />
+    <ClCompile Include="Q94_Binary_Tree_Inorder_Traversal.cpp" />
+    <ClCompile Include="Q95_Unique_Binary_Search_Trees_II.cpp" />
+    <ClCompile Include="Q96_Unique_Binary_Search_Trees.cpp" />
+    <ClCompile Include="Q97_Interleaving_String.cpp" />
+    <ClCompile Include="Q98_Validate_Binary_Search_Tree.cpp" />
+    <ClCompile Include="Q99_Recover_Binary_Search_Tree.cpp" />
+    <ClCompile Include="Q9_Palindrome_Number.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
