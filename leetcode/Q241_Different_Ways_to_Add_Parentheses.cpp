@@ -84,7 +84,7 @@ public:
 
 };
 
-
+/*
 int main(int argc, char** args)
 {
 	Solution so;
@@ -96,3 +96,4 @@ int main(int argc, char** args)
 	system("pause");
 	return 0;
 }
+*/
